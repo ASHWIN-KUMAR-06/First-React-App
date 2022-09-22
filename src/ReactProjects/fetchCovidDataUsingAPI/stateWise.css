@@ -1,0 +1,37 @@
+.container-fluid {
+    /* border: 3px solid red; */
+    padding: 2rem 15rem;
+}
+
+.main-heading {
+    text-align: center;
+}
+
+.table-responsive {
+    /* border: 2px solid blue; */
+    /* padding: 1rem 5rem; */
+    margin: 2rem 0;
+    height: 70vh;
+    overflow: scroll;
+    box-shadow: 1px 1px 5px 2px rgb(165, 162, 162);
+}
+
+.table {
+    /* border: 2px solid grey; */
+    border-collapse: collapse;
+    /* margin: 1rem 0; */
+    width: 100%;
+}
+
+.table  td, th {
+    /* border: 1px solid rgb(200, 197, 197); */
+    padding: 0.3rem 1rem;
+}
+
+
+thead {
+    background-color: rgb(33, 33, 44);
+    color: white;
+    position: sticky;
+    top: -0.11px;
+}

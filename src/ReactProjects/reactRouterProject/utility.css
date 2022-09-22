@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Poppins:wght@300;400;500;700&family=Rubik:wght@300;400&family=Schoolbell&display=swap');
+
+:root {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+
+    /* background-color: rgb(10, 25, 33); */
+    /* color: rgba(255, 255, 255, 0.987); */
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* //////////////////// utility classes //////////////// */
+
+.active_class {
+    color: rgb(89, 0, 255);
+    border-bottom: 1px solid red;
+}
+
+.navbar {
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(2, 10, 30);
+    color: white;
+    padding: 2rem 0;
+}
+
+.navbar > * {
+    color: rgb(131, 213, 224);
+    text-decoration: none;
+}
+
+.search_bar {
+    /* border: 3px solid blue; */
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search_bar > * {
+    margin: 2rem 0;
+}
+
+.search_bar input {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid rgb(174, 170, 170);
+    box-shadow: 0px 0px 5px 2px rgb(164, 163, 163);
+}
+
+input:focus {
+    border: 2px solid rgb(157, 155, 155);
+    outline: none;
+}
+
+.img-container {
+    box-shadow: 0px 0px 5px 2px rgb(70, 70, 70);
+    height: 400px;
+    width: 600px;
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* //////////////////////// media queries //////////////// */
+
+@media (max-width:400px) {
+    :root {
+        font-size: 7px;
+    }
+
+    .container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+
+}

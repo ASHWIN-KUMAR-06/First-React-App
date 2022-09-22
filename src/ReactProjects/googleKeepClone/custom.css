@@ -1,0 +1,132 @@
+/* ///////////////// header //////////////// */
+.header {
+    /* border: 2px solid red; */
+    padding: 1rem 10rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(249, 204, 3);
+
+}
+.header > h1{
+    font-size: 2rem;
+    color: white;
+}
+
+.header > .img {
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+
+
+/* //////////////// CreateNote ///////////////// */
+
+.main_note {
+    /* border: 2px solid red; */
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main_note form {
+    /* border: 2px solid blue; */
+    width: 35rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px 1px rgb(181, 178, 178);
+}
+
+form > * {
+    margin: 0.4rem 0;
+    font-size: 2rem;
+}
+
+input, textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    /* border-bottom: 2px solid yellow; */
+}
+
+textarea {
+    font-size: 1.6rem;
+}
+
+form .button {
+    /* border: 2px solid red; */
+    z-index: 10;
+    border-radius: 50%;
+    transform: translate(13.8rem, 3.3rem);
+    background-color: white;
+    box-shadow: 1px 1px 5px 0px rgb(127, 123, 123);
+    color: rgb(249, 204, 3);
+}
+
+.button .plus_sign {
+    font-size: 5rem;
+}
+
+form .button:hover {
+    background-color: rgb(249, 204, 3);
+    color: white;
+}
+form .button:active {
+    background-color: rgba(249, 204, 3, 0.656);
+}
+
+
+
+/* //////////////////// notes //////////////////// */
+
+.notes {
+    /* border: 3px solid blue; */
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note {
+    /* border: 2px solid red; */
+    box-shadow: 1px 1px 3px 2px rgb(203, 200, 200);
+    margin: 1rem 2rem;
+    padding: 0.5rem 1rem;
+    flex-basis: 280px;
+}
+
+.note .btn {
+    padding: 0.3rem;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 3px 2px rgb(203, 200, 200);
+    transform: translate(1150%, 0);
+    color: rgb(249, 204, 3);
+}
+
+.btn:hover {
+    color: rgb(199, 8, 8);
+    cursor: pointer;
+}
+.btn:active {
+    background-color: rgba(199, 8, 8, 0.541);
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* /////////////// Footer ////////////////// */
+
+.footer {
+    /* border: 2px solid red; */
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    padding: 1rem ;
+}
+.footer > p{
+    text-align: center;
+}

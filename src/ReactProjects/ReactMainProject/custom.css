@@ -1,0 +1,305 @@
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#clicked {
+  border-bottom: 2px solid black;
+  color: rgb(121, 212, 121);
+}
+
+/* ////////////////// Navbar.jsx /////////// */
+
+nav.container {
+  /* border: 2px solid blue; */
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .logo {
+  color: rgb(28, 133, 127);
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.menus {
+    display: flex;
+    align-items: center;
+}
+
+.menus .menu-item {
+    margin: 0 1rem;
+}
+
+.menu-item .menu-link:hover {
+  text-decoration: none;
+  color: green;
+}
+
+
+#side-menu {
+  /* border: 2px solid yellow; */
+  display: none;
+  padding: -1px -20px;
+  z-index: 20;
+}
+
+#side-menu > .side-menu-btn {
+  font-size: 4rem;
+  color: black;
+  transition: all 2s ease-in-out;
+}
+
+@media (max-width:450px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .container > * {
+    margin: 0 3rem;
+  }
+
+  #side-menu {
+    display: block;
+  }
+
+  .menus {
+    border: 0.2px solid grey;
+    box-shadow: 0px 0px 10px 2px grey;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 90vw;
+    height: 100vh;
+    background-color: white;
+    transform: translate(-450px, 290px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menus .menu-item {
+    /* border: 2px solid green; */
+    width: 30%;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+  }
+
+  .logo {
+    order: 2;
+  }
+
+}
+
+
+
+/* //////////////// home.jsx /////////////// */
+
+
+#header {
+    /* border: 3px solid red; */
+    display: flex;
+    padding: 1rem 10rem;
+}
+
+.header-content {
+    /* border: 2px solid blue; */
+    padding: 10rem 3rem 3rem 3rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-content > * {
+  margin: 0.5rem 0;
+}
+
+
+.header-content .brand {
+    color: rgb(28, 133, 127);
+    font-size: 3rem;
+}
+
+.header-content button {
+    width: 15rem;
+    padding: 1rem;
+    border: 2px solid rgb(28, 133, 127);
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: white;
+}
+
+
+button:hover {
+    background-color: rgb(28, 133, 127);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover > * {
+  color: white;
+}
+
+button:active {
+    background-color: rgb(15, 67, 65);
+}
+
+.header-image {
+    /* border: 2px solid blue; */
+    width: 60%;
+}
+
+.img-container {
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container > img {
+    height: 80%;
+    width: 80%;
+    animation-name: image-move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes image-move {
+  0% {
+    transform: translate(0, -5%);
+  }
+  100% {
+    transform: translate(0, 5%);
+  }
+}
+
+
+@media (max-width:450px) {
+  #header {
+    /* border: 3px solid red; */
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .header-content {
+    /* border: 2px solid blue; */
+    padding: 1rem;
+    width: 100%;
+    align-items: center;
+    order: 2;
+  }
+
+  .header-image {
+    /* border: 2px solid blue; */
+    padding: 5rem;
+    width: 100%;
+    order: 1;
+  }
+
+
+}
+
+
+/* /////////////// services.jsx //////////// */
+
+
+.service {
+  /* border: 3px solid red; */
+  padding: 5rem 10rem;
+}
+
+.service > h2 {
+  text-align: center;
+}
+
+.cards-container {
+  /* border: 2px solid lightblue; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  border: 1px solid rgb(168, 167, 167);
+  margin: 1rem 0;
+  width: 30%;
+}
+
+@media (max-width:450px) {
+
+  .service {
+    padding: 4rem;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin: 3rem 0;
+  }
+}
+
+
+
+
+/* ////////// contact.jsx ///////////// */
+
+.contact {
+  /* border: 3px solid green; */
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact form {
+  margin: 2rem 0;
+  /* border: 2px solid blue; */
+  width: 30%;
+}
+
+@media (max-width:450px) {
+  .contact form {
+    width: 80%;
+  }
+}
+
+
+/* //////////////// footer.jsx ///////// */
+
+
+
+.footer {
+  /* border: 3px solid red; */
+  padding-top: 1rem;
+  width: 100vw;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  background-color: skyblue;
+  color: rgb(16, 14, 14);
+}
+
+
+@media (max-width:450px) {
+
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+
+

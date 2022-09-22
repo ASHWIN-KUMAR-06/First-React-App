@@ -1,0 +1,32 @@
+
+.container {
+    /* border: 2px solid blue; */
+    display: flex;
+    padding: 2rem;
+    
+}
+
+.details {
+    order: 2;
+    margin: 1rem 5rem;
+    /* border: 3px solid red; */
+    width: 400px;
+}
+
+.selectBox {
+    order: 1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 1px solid grey;
+    padding: 1rem;
+}
+
+tr td:first-child {
+    width: 35%;
+}

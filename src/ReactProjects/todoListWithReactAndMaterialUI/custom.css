@@ -1,0 +1,78 @@
+.main_div {
+    height: 100vh;
+    width: 100vw;
+    background-color : #0a1921;
+    display: flex;
+    justify-content: center;
+}
+
+.center_div {
+    background-color: white;
+    height: 70vh;
+    margin-top: 5rem;
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0);
+    border-radius: 1.5rem;
+    padding: 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.center_div > h1 {
+    text-align: center;
+    font-size: 4rem;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    text-shadow: 10px 10px 10px 10px gray;
+    /* text-decoration: line-through; */
+}
+
+.fields {
+    padding: 0 1rem;
+}
+
+input[type='text'] {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid purple;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+.fields .button {
+    margin-left: 2rem;
+    background-color: purple;
+    color: white;
+    box-shadow: 1px 1px 5px 2px grey;
+}
+
+.fields .button:hover {
+    color: purple;
+}
+
+ul {
+    /* border: 2px solid red; */
+    padding: 2rem;
+}
+
+.todo_style {
+    /* border: 2px solid blue; */
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.deleteButton {
+    /* box-shadow: 0px 0px 1px 0px rgb(34, 33, 33); */
+    padding: 0.2rem 0.8rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    color: rgb(199, 10, 10);
+}
+
+.deleteButton:hover {
+    cursor: pointer;
+    background-color: rgb(199, 10, 10);
+    color: white;
+}
