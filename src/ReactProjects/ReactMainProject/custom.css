@@ -263,10 +263,20 @@ button:active {
   align-items: center;
 }
 
+
+
 .contact form {
   margin: 2rem 0;
   /* border: 2px solid blue; */
-  width: 30%;
+  width: 40%;
+  padding: 1rem;
+}
+
+.contact form input,
+.contact form textarea {
+  /* border: 3px solid red; */
+  font-size: 1.5rem;
+
 }
 
 @media (max-width:450px) {
